@@ -6,77 +6,126 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-:root {
+/* Google Font Import - Poppins */
+
+/* Variables */
+:root { 
   /* ===== Colors ===== */
   --light-mode-color: #ffffffc2;
   --dark-mode-color: #161616c5;
   --icon-sytem-lm-color: #000000;
   --icon-sytem-dm-color: #ffffff;
-
+  --hover-color: #282A3A;
+  
   /* ====== Transition ====== */
+  --tran-01: all 1s ease;
   --tran-02: all 0.2s ease;
   --tran-03: all 0.3s ease;
-  --tran-04: all 0.3s ease;
-  --tran-05: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+  --tran-07: all 0.7s ease;
 }
-.Desktop_img {
-  background: url("../img/wallpaper/background.png") no-repeat center center
-    fixed;
+/* Variables */
+
+/* Vista */
+a{
+  text-decoration: none;
+}
+.Desktop{
+  background: url("../img/wallpaper/background.png") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
 }
-.taskbar {
-  position: fixed;
+.Taskbar {
   background-color: var(--light-mode-color);
-  z-index: 1;
-  top: 86%;
-  left: 10%;
-  height: 5rem;
-  width: 80%;
-  border-radius: 12px;
+  width: 80vw;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  position: fixed;
+  left: 10vw;
+  bottom: 5vh;
+  border-radius: 1em;
+}
+/* Vista */
+
+/*Column - 1*/
+.Icons_column{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  padding: 1vh 4vh;
 }
-.menu_button {
-  padding-left: 0.5rem;
-  margin: 0.5rem;
+.Menu_icon{
+  width: 8vh;
+  padding: .2rem;
 }
-.menu_button .menu_icon {
-  height: 3.5rem;
+.Menu_icon:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transition: var(--tran-07);
 }
-.taskbar_icon .menu_icon {
-  height: 2.7rem;
-  padding-left: 3rem;
-  margin: 0.5rem;
+.File_icon{
+  margin-left: 4vw;
+  width: 6vh;
+  padding: .2rem;
 }
-.taskbar_icon .icon {
-  height: 2.8rem;
-  padding-left: 1rem;
-  margin: 0.5rem;
+.File_icon:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transition: var(--tran-07);
 }
-.notification_area {
-  padding-left: 19rem;
+.App_icon{
+  margin-left: 1.5vw;
+  width: 6vh;
+  padding: .2rem;
 }
-.notification_area i {
-  color: var(--icon-sytem-lm-color);
+.App_icon:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transition: var(--tran-07);
 }
-.notification_area .volume_icons {
-  padding-left: 1.5rem;
+/*Column - 1*/
+
+/*Column - 2*/
+.System_column{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2vh;
 }
-.notification_area .notify_icons {
-  padding-left: 8rem;
-}
-.clock_area{
-position: fixed;
-top: 90.5%;
-left: 78.3%;
-z-index: 2;
-}
-.reloj {
+.reloj{
   font: bold 1em dotum, "lucida sans", arial;
   color: var(--icon-sytem-lm-color);
   text-align: center;
-  float: right;
+  padding-top: 0.12rem;
 }
+.fa-solid{
+  color: #000000;
+  width: 2vh;
+}
+.fa-solid:hover{
+  color: var(--hover-color);
+}
+.System_column > a{
+  margin: 0px 1vw;
+}
+/*Column - 2*/
+
+/*Modal - Menu*/
+.menu_modal{
+  display: none;
+  position: fixed;
+  width: 25vw;
+  height: 30vw;
+  background-color: var(--light-mode-color);
+  top: 25vh;
+  left: 10vw;
+  border-radius: 1em;
+}
+/*Modal - Menu*/

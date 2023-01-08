@@ -1,3 +1,7 @@
+/*<====    Open|Close Menu    ====>*/
+
+
+/*<====    !Clock    ====>*/
 function actual() {
   fecha=new Date(); //Actualizar fecha.
   hora=fecha.getHours(); //hora actual
