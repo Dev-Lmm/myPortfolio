@@ -50,6 +50,49 @@ a{
 }
 /* Vista */
 
+/*Modal - Menu*/
+.Modal_menu{
+  position: fixed;
+  display: flex !important;
+  width: 25vw;
+  height: 30vw;
+  background-color: var(--light-mode-color);
+  top: 24vh;
+  left: 10vw;
+  border-radius: 1em;
+  display: none !important;
+}
+.Modal_menu_show{
+  display: block!important;
+}
+.Menu_container{
+  margin: 2vh;
+  width: 90%;
+  background-color: var(--icon-sytem-dm-color);
+  border-radius: 1em;
+  padding: 2vh;
+  display: grid;
+  gap: 2vh;
+  max-height: 75%;
+}
+.Close_section{
+  position: absolute;
+  justify-content: center;
+  bottom: 2vh;
+  right: 2vh;
+  border-radius: 0.4em;
+}
+.Btn_Off{
+  width: 4.5vh;
+}
+.Btn_Off:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transition: var(--tran-07);
+}
+/*Modal - Menu*/
+
 /*Column - 1*/
 .Icons_column{
   display: flex;
@@ -59,18 +102,18 @@ a{
 }
 .Menu_icon{
   width: 8vh;
-  padding: .2rem;
+  padding: .2em;
 }
 .Menu_icon:hover{
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
   transition: var(--tran-07);
 }
 .File_icon{
   margin-left: 4vw;
   width: 6vh;
-  padding: .2rem;
+  padding: .2em;
 }
 .File_icon:hover{
   transform: scale(1.2);
@@ -81,7 +124,7 @@ a{
 .App_icon{
   margin-left: 1.5vw;
   width: 6vh;
-  padding: .2rem;
+  padding: .2em;
 }
 .App_icon:hover{
   transform: scale(1.2);
@@ -97,35 +140,29 @@ a{
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
-  padding: 2vh;
+  padding: 0vh 2vh;
 }
 .reloj{
   font: bold 1em dotum, "lucida sans", arial;
   color: var(--icon-sytem-lm-color);
   text-align: center;
-  padding-top: 0.12rem;
+  padding-top: 0.12em;
+  font-size: 2.5vh;
+}
+.reloj:hover{
+  color: var(--hover-color);
 }
 .fa-solid{
-  color: #000000;
-  width: 2vh;
+  color: var(--icon-sytem-lm-color);
+  font-size: 2vh;
 }
 .fa-solid:hover{
   color: var(--hover-color);
+}
+.System_column > #Icons_disable{
+  pointer-events: none;
 }
 .System_column > a{
   margin: 0px 1vw;
 }
 /*Column - 2*/
-
-/*Modal - Menu*/
-.menu_modal{
-  display: none;
-  position: fixed;
-  width: 25vw;
-  height: 30vw;
-  background-color: var(--light-mode-color);
-  top: 25vh;
-  left: 10vw;
-  border-radius: 1em;
-}
-/*Modal - Menu*/

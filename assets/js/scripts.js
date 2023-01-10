@@ -1,7 +1,17 @@
-/*<====    Open|Close Menu    ====>*/
-
-
-/*<====    !Clock    ====>*/
+/*<====    Open Menu    ====>*/
+const OpenModal = document.querySelector('.Menu_icon');
+const ModalAction = document.querySelector('.Modal_menu');
+OpenModal.addEventListener('click',(e)=>{
+   e.preventDefault();
+   ModalAction.classList.add('Modal_menu_show');
+});
+/*<====    Close Menu    ==>*/
+const CloseModal = document.querySelector('.Close_Action');
+CloseModal.addEventListener('click',(e)=>{
+   e.preventDefault();
+   ModalAction.classList.remove('Modal_menu_show');
+});
+/*<====     Clock    ====>*/
 function actual() {
   fecha=new Date(); //Actualizar fecha.
   hora=fecha.getHours(); //hora actual

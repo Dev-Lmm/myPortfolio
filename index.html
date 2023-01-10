@@ -10,7 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style_sheet.css" />
     <!-- JS -->
-    <script src="assets/js/scripts.js"></script>
+    <script defer src="assets/js/scripts.js"></script>
     <!-- CDN -->
     <script defer src="https://kit.fontawesome.com/757436a7d6.js" crossorigin="anonymous"></script>
 
@@ -21,22 +21,37 @@
       <!-- Taskbars -->
       <div class="Taskbar">
         <div class="Icons_column">
-          <a href="" ><img src="assets/img/icons-system/Menu.png" alt="Menu" class="Menu_icon"/></a>
+          <a href="#" ><img src="assets/img/icons-system/Menu.png" alt="Menu" class="Menu_icon"/></a>
           <a href="" rel="Files"><img src="assets/img/icons-system/Files.png" alt="Menu" class="File_icon"/></a>
           <a href="https://github.com/Dev-Lmm" target="_blank" rel="GitHub"><img src="assets/img/icons-apps/GitHub(DarkMode).png" alt="Menu" class="App_icon"/></a>
-          <a href="https://walink.co/72b437" target="_blank" rel="Whatsapp"><img src="assets/img/icons-apps/Whatsapp.png" alt="Menu" class="App_icon"/></a>
+          <a href="https://wa.me/529611262773" target="_blank" rel="Whatsapp"><img src="assets/img/icons-apps/Whatsapp.png" alt="Menu" class="App_icon"/></a>
           <a href="https://t.me/Dev_Lmm" target="_blank" rel="Telegram"><img src="assets/img/icons-apps/Telegram.png" alt="Menu" class="App_icon"/></a>
           <a href="https://lennart-montoya-morales.itch.io/" target="_blank" rel="Itch.io"><img src="assets/img/icons-apps/Itch.io.png" alt="Menu" class="App_icon"/></a>
         </div>
         <!-- Notification area -->
         <div class="System_column">
-          <a href=""><i class="fa-solid fa-wifi"></i></a>
-          <a href="" class="volume_icons"><i class="fa-solid fa-volume-high"></i></i></a>
-          <a href=""><div id="reloj" class="reloj"> 00 : 00 : 00</div></a>
-          <a href="" class="notify_icons"><i class="fa-solid fa-bell"></i></a>
+          <a id="Icons_disable" href=""><i class="fa-solid fa-wifi"></i></a>
+          <a id="Icons_disable" href="" class="volume_icons"><i class="fa-solid fa-volume-high"></i></i></a>
+          <a id="Icons_disable" href=""><div id="reloj" class="reloj"> 00 : 00 : 00</div></a>
+          <a id="Notify" href="" class="notify_icons"><i class="fa-solid fa-bell"></i></a>
         </div>
       </div>
     </section>
+    <!-- Desktop View -->
+
+    <!-- Menu Modal -->
+    <section class="Modal_menu">
+      <!-- Icons Apps Section -->
+      <div class="Menu_container">
+        
+      </div>
+      
+      <!-- Icons System Section -->
+      <div class="Close_section">
+        <a href="#" class="Close_Action"><img src="assets/img/icons-system/ButtonOff.png" alt="Menu" class="Btn_Off"/></i></a>
+      </div>
+    </section>
+    <!-- Menu Modal -->
 
   </body>
 </html>
